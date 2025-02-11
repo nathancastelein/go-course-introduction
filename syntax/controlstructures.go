@@ -21,6 +21,14 @@ func For() {
 		fmt.Println("I'm in a loop: ", myVariable)
 	}
 
+	for myVariable := range 5 {
+		fmt.Println("I'm in a loop: ", myVariable)
+	}
+
+	for range 5 {
+		fmt.Println("I'm in a loop")
+	}
+
 	myVariable := 0
 	for myVariable == 0 {
 		myVariable += 5
@@ -31,8 +39,6 @@ func For() {
 		if myVariable > 10 {
 			fmt.Println("Stopping the loop, value: ", myVariable)
 			break
-		} else {
-			fmt.Println("Infinite loop, current value: ", myVariable)
 		}
 	}
 }
